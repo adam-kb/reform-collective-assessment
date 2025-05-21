@@ -9,7 +9,6 @@ export const soehne = localFont({
       weight: "400",
       style: "italic",
     },
-    { path: "./Soehne/soehne-mono-buch.woff2", weight: "400", style: "normal" },
     {
       path: "./Soehne/soehne-dreiviertelfett.woff2",
       weight: "600",
