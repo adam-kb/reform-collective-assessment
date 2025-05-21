@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
   ${ResetStyles}
   
   :root {
+    /* Typography */
+    --font-body: var(--font-soehne);
+
     /* Colors – Neutrals */
     --black-200: #081e13;
     --black-100: #112c2e;
@@ -36,6 +39,12 @@ const GlobalStyle = createGlobalStyle`
     --radius-md: 12px;
     --radius-max: 100%; //completely rounded
     --radius-scale: ${radiusClamp}
+  }
+
+  html, body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-text);
   }
 `;
 
