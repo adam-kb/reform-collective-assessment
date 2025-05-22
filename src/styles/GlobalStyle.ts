@@ -49,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
     --radius-scale: ${radiusClamp}
 
     /* Layout/Content */
+    --max-layout-width: 1440px;
     --max-content-width: 1376px;
 
     --gutter-mobile: 24px;
@@ -70,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     color: var(--color-text);
   }
 
-  body {
+  main {
     max-width: var(--max-content-width);
     margin-left: auto;
     margin-right: auto;
