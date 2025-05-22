@@ -20,6 +20,29 @@ const GlobalStyle = createGlobalStyle`
     --font-weight-h1: 400;
     --font-style-h1: normal;
 
+    /* Typography - Body XS */
+    --font-size-body-xs: 14px;
+    --line-height-body-xs: 1.4;
+    --letter-spacing-body-xs: -0.03em;
+    --font-weight-body-xs: 400;
+    --font-style-body-xs: normal;
+    
+    /* Typography - Body S */
+    --font-size-body-s: 16px;
+    --line-height-body-s: 1.4;
+    --letter-spacing-body-s: -0.03em;
+    --font-weight-body-s: 400;
+    --font-style-body-s: normal;
+
+
+
+    /* Typography - Body L */
+    --font-size-body-l: 24px;
+    --line-height-body-l: 1.4;
+    --letter-spacing-body-l: -0.03em;
+    --font-weight-body-l: 400;
+    --font-style-body-l: normal;
+
     /* Colors – Neutrals */
     --black-200: #081e13;
     --black-100: #112c2e;
@@ -45,6 +68,7 @@ const GlobalStyle = createGlobalStyle`
     /* Borders */
     --radius-sm: 6px;
     --radius-md: 12px;
+    --radius-lg: 25px;
     --radius-max: 100%; //completely rounded
     --radius-scale: ${radiusClamp}
 
