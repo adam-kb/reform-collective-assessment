@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    globalTimeline.pause();
+    globalTimeline.play();
   }, []);
 
   return (
