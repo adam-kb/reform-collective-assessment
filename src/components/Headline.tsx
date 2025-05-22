@@ -1,6 +1,7 @@
 'use client'
 
 import styled from "styled-components";
+import Marquee from "./Marquee";
 
 const Title = styled.h1`
   font-size: var(--font-size-h1);
@@ -27,7 +28,10 @@ const Emphasis = styled.span`
 
 const Headline = () => {
   return (
-    <Title>Health insurance that <Emphasis>doesn&apos;t get in the way</Emphasis></Title>
+    <>
+      <Title>Health insurance that <Emphasis>doesn&apos;t get in the way</Emphasis></Title>
+      <Marquee />
+    </>
   )
 }
 
