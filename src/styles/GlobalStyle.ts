@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 import ResetStyles from "./reset";
-import { getClamp } from "./helpers";
+import { getClamp, getClampFrom } from "./helpers";
 
-const h1Clamp = getClamp(48, 112, 1200);
+const h1Clamp = getClampFrom(48, 112, 375, 960);
 const radiusClamp = getClamp(6, 12, 1024);
 
 const GlobalStyle = createGlobalStyle`
