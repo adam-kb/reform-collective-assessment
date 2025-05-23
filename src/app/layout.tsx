@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import StyledComponentsRegistry from "@/lib/registry";
 import StyledRoot from './StyledRoot';
 
-import { soehne } from '@/fonts/fonts';
+import { soehne, soehneMono } from '@/fonts/fonts';
 
 export const metadata: Metadata = {
   title: "Reform Collective Assessment",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={soehne.variable}>
+    <html lang="en" className={`${soehne.variable} ${soehneMono.variable}`}>
       <body>
         <StyledComponentsRegistry>
           <StyledRoot>{children}</StyledRoot>

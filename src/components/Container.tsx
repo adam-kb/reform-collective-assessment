@@ -19,11 +19,6 @@ const Container = styled.div`
     padding-left: var(--gutter-desktop);
     padding-right: var(--gutter-desktop);
   }
-
-  @media (min-width: 1441px) {
-    padding-left: calc((100vw - var(--max-content-width)) / 2);
-    padding-right: calc((100vw - var(--max-content-width)) / 2);
-  }
 `;
 
 export default Container;
