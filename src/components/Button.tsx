@@ -27,8 +27,10 @@ const StyledButton = styled.button`
   &:hover .arrow {
     transform: translateX(-237px);
     color: var(--green-200);
-    border-color: var(--green-200);
   }
+    &:hover path {
+      color: var(--green-200);
+    }
 `;
 
 const ButtonInner = styled.span`
@@ -60,7 +62,7 @@ const Label = styled.span`
   font-size: var(--font-size-body-s);
   letter-spacing: -0.03em;
 
-  border: 1px solid var(--green-500);
+  border: 1px solid var(--green-400);
   border-radius: var(--radius-lg);
   transition: transform 0.3s ease, color 0.5s ease, border-color 0.5s ease;
 `;

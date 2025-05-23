@@ -8,7 +8,7 @@ const CircleIcon = styled.svg`
   width: 50px;
   height: 50px;
   display: block;
-  color: currentColor;
+  color: var(--green-400);
   cursor: pointer;
 `;
 

@@ -1,0 +1,25 @@
+<svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="6" height="7" fill="#383838"/>
+<g id="1 - Hero Mobile End">
+<rect width="375" height="812" transform="translate(-75 -489)" fill="#FBFAF6"/>
+<g id="Illo">
+<g clip-path="url(#clip0_10590_2631)">
+<g id="Illustration Cards">
+<g id="Insurance Card">
+<rect x="-10.55" y="-83.75" width="246" height="121.5" rx="5.75" fill="#F2F4ED"/>
+<rect x="-10.55" y="-83.75" width="246" height="121.5" rx="5.75" stroke="#6E9E8F" stroke-width="0.5"/>
+<g id="Dropdown">
+<path id="Polygon 3" d="M5.01695 3.10963C5.26095 3.32004 5.26095 3.67996 5.01695 3.89037L2.15554 6.35788C1.79092 6.67231 1.19995 6.43089 1.19995 5.96751L1.19995 1.03249C1.19995 0.56911 1.79092 0.327693 2.15554 0.642119L5.01695 3.10963Z" fill="#CCDDC7" stroke="#6E9E8F" stroke-width="0.5"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="-51" y="-97" width="327" height="190" stroke="#CCDDC7"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_10590_2631">
+<rect x="-51" y="-97" width="327" height="190" fill="white"/>
+</clipPath>
+</defs>
+</svg>
