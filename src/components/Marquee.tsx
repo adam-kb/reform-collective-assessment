@@ -8,6 +8,7 @@ import { getClampFrom } from "@/styles/helpers";
 
 import { useGSAP } from "@gsap/react";
 import { globalTimeline } from "@/lib/animations/globalTimeline";
+import { marquee as marqueeTextNodes } from "@/data/marquee";
 
 const marqueeClampWidth = getClampFrom(327, 607, 501, 1440);
 const marqueeClampHeight = getClampFrom(62, 79, 375, 1024);
@@ -21,14 +22,6 @@ const InlineContainer = styled(Container)`
     vertical-align: middle;
   }
 `;
-
-const marqueeTextNodes = [
-  "unpredictable rate increases",
-  "lack of transparency",
-  "implementation headaches",
-  "claim denials",
-  "frustrated users",
-];
 
 const marqueeTranslateX = keyframes`
   from {
