@@ -15,11 +15,13 @@ const detailBarsClamp = getClampFrom(153, 307, 501, 1024);
 const barCodeClamp = getClampFrom(30, 60, 501, 1024);
 const borderRadiusClamp = getClampFrom(6, 12, 501, 1024);
 
+const userIdMarginClamp = getClampFrom(11, 21, 501, 1024);
+
 const SlideBox = styled.div`
-  min-height: 122px;
-  max-width: 240px;
-  aspect-ratio: 2;
+  aspect-ratio: 2 / 1;
+  height: auto;
   background: #f2f4ed;
+  min-width: 240px;
   border: 1px solid var(--green-300);
   color: var(--green-300);
   border-radius: ${borderRadiusClamp};
@@ -36,13 +38,17 @@ const SlideBox = styled.div`
 const SlideContent = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
   height: 100%;
 `;
 
 const SlideCol = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1024px) {
+    gap: 6px;
+  }s
 `;
 
 const SlideRow = styled.div`
@@ -56,8 +62,14 @@ const SlidePhoto = styled.div`
   width: 40px;
   height: auto;
 
+  img {
+    aspect-ratio: 1;
+    height: auto;
+  }
+
   @media (min-width: 501px) {
     width: ${profilePhotoClamp};
+    height: ${profilePhotoClamp};
   }
 `;
 
@@ -92,9 +104,16 @@ const SlideUserId = styled.p`
   text-align: right;
   opacity: 0.4;
   color: var(--green-300);
+  text-decoration: none !important;
+  user-select: text;
+  margin-top: 10px;
 
+  a {
+    text-decoration: none;
+  }
   @media (min-width: 501px) {
     font-size: ${userIdClamp};
+    margin-top: ${userIdMarginClamp};
   }
 `;
 
@@ -154,7 +173,7 @@ const Slide = ({ name, imgUrl, title, userId, company }: SlideProps) => {
           <div>
             <SlideName>{name}</SlideName>
             <SlideTitle>{title}</SlideTitle>
-            <SlideUserId>{userId}</SlideUserId>
+            <SlideUserId className="no-autolink">{userId}</SlideUserId>
           </div>
         </SlideRow>
         <SlideCol className="aligned-bottom">

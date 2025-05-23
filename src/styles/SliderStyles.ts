@@ -26,7 +26,7 @@ export const SliderStyles = css`
     justify-content: center;
     align-items: center;
     scale: 0.8;
-
+    
     @media (min-width: 501px) {
       width: 100%;
       max-width: 493px;

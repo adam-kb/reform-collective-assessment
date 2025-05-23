@@ -100,6 +100,12 @@ const GlobalStyle = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
   }
+
+  .no-autolink {
+    user-select: text;
+    -webkit-touch-callout: none;
+    text-decoration: none !important;
+  }
 `;
 
 export default GlobalStyle;
